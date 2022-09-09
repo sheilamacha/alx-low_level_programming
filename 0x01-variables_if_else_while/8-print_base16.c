@@ -1,23 +1,26 @@
+
 #include <stdio.h> 
-  
- int main() 
+ /** 
+  * main - prints all numbers of base 16. 
+ (* 
+  * Return: 0 on success 
+  */ 
+ int main(void) 
  { 
-      
-     int num; 
-     char ch; 
-    for (num = '0'; num <='9'; num++) 
-     { 
-              
-         putchar( num); 
-     } 
-       
-    for (ch = 'a'; ch <= 'f'; ch++) 
-     { 
-         putchar( ch); 
-     } 
-     putchar('\n'); 
-      
-    
+         int i = '0'; 
   
-     return 0; 
+         while (i <= '9') 
+         { 
+                 putchar(i); 
+                 i++; 
+         } 
+         i = 'a'; 
+         while (i <= 'f') 
+         { 
+                 putchar(i); 
+                 i++; 
+         } 
+         putchar('\n'); 
+         return (0); 
+  
  }
