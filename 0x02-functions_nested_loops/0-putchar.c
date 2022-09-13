@@ -1,11 +1,12 @@
-#include <stdio.h>
-#include <main.h>
 
- int main() 
- { 
-     for (int i=65; i<91; i++)
-     {
-         putchar(i);
-     } 
-         return (0); 
- }
+#include <stdio.h> 
+void main() 
+{ 
+       int c;
+
+c = getchar(); 
+while (c != EOF) 
+    { putchar(c); 
+      c = getchar();
+    } 
+}
