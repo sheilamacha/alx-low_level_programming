@@ -1,32 +1,32 @@
 #include "main.h"
 /**
 * _atoi - Convert string to an integer.
-* @s; Pointer to a character string
-*
-* Return: void.
+* @s: the string to convert
+* Return: the converted string.
 */
+int _atoi(char *s)
+{
+short boolean;
+int i, minus, result;
 
-int main(void)
-{
-int sign;
-unsigned int num;
-char *temp;
+i = minus = result = boolean = 0;
+minus = -1;
 
-temp = s;
-num = 0;
-sign = l;
-while (*temp != '\0' && (*temp < '0' || *temp > '9'))
+while (s[i] != '\0')
 {
-if (*temp == '-')
-sign *= -l;
-temp++;
-}
-if (*temp != '\0')
+if (s[i] == '-')
+minus *= -1;
+
+if (s[i] >= '0' && s[i] <= '9')
 {
-do {
-num = num * 10 + (*temp - '0');
-temp++;
-} while (*temp >= '0' && *temp <= '9');
+result *= 10;
+result -= (s[i] - '0');
+boolean = 1;
 }
-return (num * sign);
+else if (boolean == 1)
+break;
+i++;
+}
+result *= minus;
+return (result);
 }
