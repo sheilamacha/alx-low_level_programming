@@ -6,7 +6,7 @@
 * Return: void.
 */
 
-int (void)
+int main(void)
 {
 int sign;
 unsigned int num;
