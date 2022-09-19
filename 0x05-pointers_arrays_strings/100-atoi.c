@@ -6,7 +6,7 @@
 * Return: void.
 */
 
-int _atoi(char *s)
+int (void)
 {
 int sign;
 unsigned int num;
