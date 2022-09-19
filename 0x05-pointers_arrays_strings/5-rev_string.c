@@ -15,7 +15,7 @@ while (s[i] != '\0')
 i++;
 }
 k = 0;
-j = i - 1:
+j = i - l;
 
 while (k < j)
 {
