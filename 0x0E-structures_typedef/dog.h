@@ -1,16 +1,16 @@
 #ifndef STRTYP
 #define STRTYP
 /**
-  * struct dog - list dates about pet
-  * @name: pet name
-  * @age: pet age 
-  * @owner: pet owner name
-  */
+* struct dog - structure of a dog.
+* @name: name of dog.
+* @age: age of dog.
+* @owner: owner of dog.
+*/
 struct dog
 {
-         char *name;
-         float age;
-         char *owner;
+        char *name;
+        float age;
+        char *owner;
 };
 typedef struct dog dog_t;
 
