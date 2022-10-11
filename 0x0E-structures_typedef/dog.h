@@ -1,22 +1,22 @@
 #ifndef STRTYP
- #define STRTYP
- /**
+#define STRTYP
+/**
   * struct dog - list dates about pet
   * @name: pet name
   * @age: pet age 
   * @owner: pet owner name
   */
- struct dog
- {
+struct dog
+{
          char *name;
          float age;
          char *owner;
- };
- typedef struct dog dog_t;
+};
+typedef struct dog dog_t;
 
- void init_dog(struct dog *d, char *name, float age, char *owner);
- void print_dog(struct dog *d);
- dog_t *new_dog(char *name, float age, char *owner);
- void free_dog(dog_t *d);
+void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
+dog_t *new_dog(char *name, float age, char *owner);
+void free_dog(dog_t *d);
 
- #endif /*STRTYP*/
+#endif /*STRTYP*/
