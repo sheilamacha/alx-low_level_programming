@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "lists.h"
+
 /**
 * print_list - print elements of a list_t list
 * @h: first element of the list
